@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Boka bord</title>
+        <link rel="preconnect" href="https://fonts.bunny.net">
+     <link href="https://fonts.bunny.net/css?family=eb-garamond:400playfair-display:400" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="boka-bord.css">
+    <link rel="stylesheet" href="färgertema.css">
+	<link rel="stylesheet" href="typografi.css">
+    </head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="nav-link" href="index.html">Hem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="meny.html">Meny</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="boka-bord.html">Boka Bord</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Om-oss.html">Om oss</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<main>
+
+<div id="calender-wrapper">
+	<div id="calender-title" class="disable-select flex row center-v around">
+		<div id="left" class="flex row center-vh"><span>&lt;</span></div>
+		<p class="flex row center-vh"></p>
+		<div id="right" class="flex row center-vh"><span>></span></div>
+	</div>
+	<div id="days" class="flex row center-vh colorRed disable-select">
+		<p>MÅN</p>
+		<p>TIS</p>
+		<p>ONS</p>
+		<p>TORS</p>
+		<p>FRE</p>
+		<p>LÖR</p>
+		<p>SÖN</p>
+	</div>
+	<div id="calender-content" class="flex row wrap disable-select"></div>
+
+	<div id="booking-wrapper" class="flex column center-vh">
+		<div id="booking-title" class="flex row center-vh bgColor">
+		
+		</div>
+		<div id="booking-form">
+			<div class="flex column start width-full">
+				<p>Ditt namn*</p>
+				<input id="form-name" class="width-full" type="text" placeholder=""/>
+			</div>
+			<div class="flex column start width-full">
+				<p>Din Mail*</p>
+				<input id="form-email" class="width-full" type="email" placeholder=""/>
+			</div>
+			<div class="flex row center-vh width-full overflow-hidden">
+				<div class="flex column start width-3-4">
+					<p>Ditt Nummer*</p>
+					<input id="form-number" class="width-full" type="text" placeholder=""/>
+				</div>
+				<div class="flex column start width-1-4">
+					<p>Antal Gäster*</p>
+					<input id="form-guests" class="width-full" type="number" max="10" placeholder=""/>
+				</div>
+			</div>
+			<div class="flex column start width-full">
+				<p>Vilken tid vill du komma?*</p>
+				<input id="form-time" class="width-full" type="time" />
+			</div>
+			<div class="flex column start width-full">
+				<p> Övrig Boking Information</p>
+				<textarea id="form-enquiry" placeholder=""></textarea>
+			</div>
+			<div class="flex column center-vh width-full">
+				<p><i>Nödvändigt*</i></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="calender-panel" class="flex row center-v end">
+		<div id="info" class="flex column center-vh bgColorDarkRed">
+			<div id="info-titles" class="flex row center-vh"></div>
+			<div class="flex row center-vh bgColorRed">
+				<p class="flex column center-vh" id="startdate"></p>
+			</div>
+		</div>
+		<div id="clear" class="flex column center-vh bgColorDarkRed">
+			<p>Återställ Val</p>
+		</div>
+	</div>
+</div>
+
+<div id="calender-buttons" class="flex row center-vh wrap">
+	<div id="make-booking" class="flex column center-vh">
+		<p>Fortsätt Bokning</p>
+	</div>
+</div>
+</main>
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+    <div class="footer-grid">    
+
+ <div class="brand">
+<h1 class="brand-title">Havskammaren</h1> 
+</div>
+      <div class="column">
+
+        <h2 class="column-besök-oss">Besök oss</h2>
+
+        <address class="column-text">
+        Storgatan 1<br>
+        444 30 Stenungsund<br>
+        <div class="sociala-medier">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+</address> 
+</div>
+
+<div class="column">
+        <h2 class="column-oppettider">Öppettider</h2>
+        <p class="column-text">
+          Mån–Fre: 11–22<br>
+          Lör: 11–23<br>
+          Sön: 12–23
+        </p>
+      </div>
+  
+<div class="column">
+
+  <h2 class="column-revervation">Reservation</h2>
+
+  <a href="tel:+46701234567" class="kontakt-länk">
+<span>+46 70 123 45 67</span></a>
+<a href="Boka-bord.html" class="kontakt-länk">
+<span>Boka bord</span></a>
+</div>
+<div class="footer-slut">
+ <p class="copyright">© 2026 Havskammaren. Alla rättigheter förbehållna.</p>
+    </div>
+ </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="boka-bord.js" defer> </script>
+
+</body>
+</html>
+
+

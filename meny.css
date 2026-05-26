@@ -1,0 +1,63 @@
+body {
+  
+   color: #1c1c1c;
+   font-family: 'EB Garamond', serif;
+   font-size: 18px;
+ }
+
+
+
+h1 {
+  font-family: 'Playfair Display', serif;
+ font-size: 47px; 
+  text-align: center;
+  padding: 40px 20px 10px;
+  margin-top: 2ch;
+  
+}
+
+
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 26px;
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+
+
+
+.meny-text {
+  text-align: center;
+}
+
+
+.meny-lista {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+
+.meny-lista li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d4c9a0;
+  line-height: 2;
+}
+
+.meny-title {
+  margin-top: 2em;
+  
+}
+
+.meny-title h2 {
+  font-size: 4em;
+}
+
+footer h2{
+  padding: 0;
+ text-align: left; 
+}

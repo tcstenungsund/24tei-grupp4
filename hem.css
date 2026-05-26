@@ -1,0 +1,72 @@
+
+
+.bild-text{
+font-size: 5em;
+margin: 50px;
+text-align: center;
+}
+
+
+.hem {
+  position: relative;
+  height: 400px; 
+  background-image: url("västkust-bild-hem.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.p1{
+margin: 40px;
+margin-top: 160px;
+max-width: 42ch;
+}
+
+.happy{
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+}
+
+.happy img{
+width: 250px;
+height:400px;
+margin: 40px; 
+flex:1; 
+}
+
+.card-body {
+  background-color: #e2dec5; 
+}
+
+
+@media (max-width: 700px) {
+.happy img {
+display: none;
+margin-top: 0;
+}
+.bild-text{
+  margin-top: 2.2em;
+  text-align: left;
+  font-size: 3em;
+}
+
+.hem {
+height: 200px;
+
+}
+.p1{
+  margin-top: 0 ;
+max-width: 42ch;
+}
+
+}
+
+  
+
+
+
+
+
+
+
+ 

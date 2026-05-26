@@ -1,0 +1,86 @@
+
+/* css till navbaren */
+.navbar {
+    background-color: #00b4d8;
+}
+
+.navbar .nav-link{
+font-size: 1.2em;
+font-weight: 400; 
+}
+
+/*css till footern */
+
+footer {
+    background-color: #367357;
+    color: #f5f1e8;              
+  padding: 6rem 2rem 3rem;  
+   
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.footer-grid h1{
+color: #f5f1e8;  
+font-size: 3em;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.kontakt-länk {
+    display: block;
+    color: #80FF80;
+}
+
+.sociala-medier a {
+  color: #80FF80;
+}
+
+
+
+
+/* css för backgrunden */
+body {
+  background-color: #e2dec5 !important;  
+}
+
+
+/*för mobil css */
+@media (max-width: 700px) {
+    .footer-grid {
+  grid-template-columns: 1fr !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+ body {
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar .container-fluid {
+  --bs-gutter-x: 0;
+  background-color: #00b4d8;
+  color: black;
+}
+
+html, body {
+  overflow-x: hidden; 
+}
+.navbar-collapse {
+  background-color: #00b4d8; 
+ width: 100%;
+ max-width: 100%;
+}
+.navbar {
+  width: 100%;
+  max-width: 100%;
+ 
+}
+}
